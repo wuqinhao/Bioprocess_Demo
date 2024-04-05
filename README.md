@@ -15,16 +15,16 @@ Compared to other data-driven models, the k-NN regression only requires one hype
 	2.2. k-NN framework cooperation with the traditional models
 	We use logistic regression to model the upstream growth to demonstrate the flexibility of the proposed k-NN framework. To simplify the description of cell/mAb growth, it can be separated into two stages: exponential and stationary. The logistic regression can be used to present these two stages. As we separated the historical data into each process mode, the historical data can be used to estimate the parameters of the selected model. Therefore, the fitted logistic model can predict the expected mAb outcome for each mode. Specifically, we use a linear model to predict the upstream cost for each mode. We assume the cost only contains average facility, average basal, and labour costs. 
 
-For the downstream modelling, we use the support vector machine (SVM) regression to fit the downstream data. For this model, we assume that the product outcome will be based on the mAb output from the upstream. Therefore, by fitting the SVM regression model to our simulated data, we can offer the prediction of the downstream process.
+	For the downstream modelling, we use the support vector machine (SVM) regression to fit the downstream data. For this model, we assume that the product outcome will be based on the mAb output from the upstream. Therefore, by fitting the SVM regression model to our simulated data, we can offer the prediction of the downstream process.
 
-Once we get the upstream and downstream prediction outcomes, we can apply these predictions as the input to the k-NN model. Therefore, we can get the most similar cases from the historical records of each mode. For further KPI calculations, the prediction and its most similar cases are used to calculate the KPIs, such as cost per mAb, mAb per day (throughput), total carbon dioxide (CO2), etc. Moreover, the details of the history profile are given along with the KPIs.
+	Once we get the upstream and downstream prediction outcomes, we can apply these predictions as the input to the k-NN model. Therefore, we can get the most similar cases from the historical records of each mode. For further KPI calculations, the prediction and its most similar cases are used to calculate the KPIs, such as cost per mAb, mAb per day (throughput), total carbon dioxide (CO2), etc. Moreover, the details of the history profile are given along with the KPIs.
 
 	2.3. KPIs calculation
 	The details of KPIs calculation are given as follows:
 	- Cost per mAb (dollar/g) := (total cost)/(predicted upstream mAb)
 	- mAb per day (g/day, throughput) := (predicted upstream mAb)/(upstream process days)
 	- Total CO2 := (facility footprint) + (predicted upstream mAb)*(constant CO2 per mAb, 14.15)
-From the given information, we found that it focuses on the upstream process. Therefore, we heavily rely on our upstream prediction in our summarisation and the KPI calculation. With further input of information and expert knowledge on the downstream process, we can also cooperate with the downstream process in our k-NN framework.
+	From the given information, we found that it focuses on the upstream process. Therefore, we heavily rely on our upstream prediction in our summarisation and the KPI calculation. With further input of information and expert knowledge on the downstream process, we can also cooperate with the downstream process in our k-NN framework.
 
 3. Implementation
 We use R and R Shiny to implement the method and demonstrate the demo. The requirement for R packages is listed below:
