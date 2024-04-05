@@ -28,10 +28,10 @@ Compared to other data-driven models, the k-NN regression only requires one hype
 
 3. Implementation
 We use R and R Shiny to implement the method and demonstrate the demo. The requirement for R packages is listed below:
-| Package  	| Version 	|
+| Package| Version|
 | ------------- | ------------- |
-| R		|4.0.5		|
-|shiny		|1.7.4		|
+| R|4.0.5|
+|shiny|1.7.4|
 |shinydashboard	|0.7.2		|
 |shinyWidgets	|0.7.6		|
 |shinyjs 	|2.1.0		|
