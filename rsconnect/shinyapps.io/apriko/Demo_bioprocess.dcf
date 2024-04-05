@@ -1,0 +1,14 @@
+name: Demo_bioprocess
+title: Demo_bioprocess
+username:
+account: apriko
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10734132
+bundleId: 8189705
+url: https://apriko.shinyapps.io/Demo_bioprocess/
+when: 1706361689.49344
+lastSyncTime: 1706361689.49344
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|app-copy.R|logit_fit.R|Data

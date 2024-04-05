@@ -1,0 +1,181 @@
+/* Get a fancy font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+:root {
+  --main-color:#2148C0;
+  --sec-color: #E9F0F7;
+}
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--sec-color);
+  color: black; /* text color */
+  font-family: 'Avenir', sans-serif; 
+}
+
+/* title bar */
+.main-header{
+  position: fixed;
+}
+.skin-blue .main-header .logo, .skin-blue .main-header .navbar, .skin-blue .main-header .navbar .sidebar-toggle:hover, .skin-blue .main-header .logo:hover{
+  background: var(--main-color);
+}
+.skin-blue .main-header .navbar .sidebar-toggle, .skin-blue .main-header .logo, .skin-blue .main-header .navbar .sidebar-toggle:hover{
+  color: #fff;
+  font-weight: 400;
+}
+h2{
+  font-size: 32px;
+  margin: 32px;
+}
+
+/* Make text visible on inputs */
+.shiny-input-container {
+  color: #474747;
+}
+.row{
+  /* display: flex;
+  align-items: stretch; */
+  margin: 0;
+}
+
+/* left con - side bar */
+#sidebarCollapsed{
+  background-color:#D3DDE7;
+}
+
+  /* upstream process and downstream process */
+    .btn-group .btn-group+.btn-group{
+      margin-left: 4px;
+    }
+    .btn-default {
+      background-color: white;
+      border-color: white;
+    }
+    .btn-default:hover{
+      box-shadow: none;
+      border-color: var(--main-color);
+      background-color: var(--main-color);
+      color: white;
+    }
+    .btn-default.btn.active{
+      box-shadow: none;
+      border-color: var(--main-color);
+      background-color: var(--main-color);
+      color: white;
+    }
+  /* END */
+
+  /* process setting */
+    /* title */
+    b, strong{
+      font-size: 18px;
+      color:#474747;
+      margin: 12px;
+    }
+    /* slider background */
+    /* slider full width */
+    .col-sm-8{
+      margin-top: 32px;
+      width: 100%;
+    }
+    .shiny-input-container:not(.shiny-input-container-inline){
+      width: 100% !important;
+    }
+
+  /* slider */
+    /* slider background */
+    .skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper{
+      background-color: var(--sec-color);
+    }
+
+    /* toggle */
+    .irs--shiny .irs-handle{
+      top: 26px;
+      background: white;
+      border: 1px solid var(--main-color);
+    }
+    /* slider con */
+    .irs--shiny .irs-line{
+      top: 32px;
+      background:white ;
+      box-shadow: 0px 4px 4px 0px rgba(211, 221, 231, 0.45) inset;
+    }
+    /* slider fill */
+    .irs--shiny .irs-bar{
+      top: 32px;
+      background-color: var(--main-color);
+    }
+    /* hide parameter */
+    .irs--shiny .irs-grid-pol{
+      display: none;
+    }
+    .irs-grid-text{
+      display: none;
+    }
+    /* label text */
+    .irs--shiny .irs-from, .irs--shiny .irs-to, .irs--shiny .irs-single{
+      font-size: 16px;
+      background: var(--main-color);
+    }
+    /* hide end */
+    /* min max parameter */
+    .sidebar .irs-min, .sidebar .irs-max{
+      color: #474747;
+      background: none;
+      top: 12px;
+    }
+    /* hide */
+    .col-sm-8 .row{
+      display: none;
+    }
+    .col-sm-6 .form-group.shiny-input-container{
+      display: none;
+    }
+    label#selectFed-label{
+      display: none;
+    }
+    .selectize-input.items.full.has-options.has-items{
+      display: none;
+    }
+    label#selectConcentrate-label{
+      display: none;
+    }
+    label#selectPerfusion-label{
+      display: none;
+    }
+
+/* right con - graph */
+.content{
+  display: table;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  max-width: 1680px;
+  margin-top: 64px;
+  margin-left: 48px;
+  box-shadow: 0px 2px 32px 0px #D3DDE7;
+}
+  .box {
+    position: relative;
+    /* display: table-row; */
+    border-top: none;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+    .nav-tabs{
+      border-bottom: 1px solid var(--main-color);
+    } 
+    .nav-tabs>li>a{
+      background: var(--sec-color);
+      color:black
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background: var(--main-color);
+    padding: 12px 15px;
+    color: white;
+    border-bottom: 2px solid var(--main-color);
+    }
